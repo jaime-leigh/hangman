@@ -595,7 +595,7 @@ function checkMatch(checkThisLetter) {
 }
 
 function manIsHung() {
-  hangman.src = '/images/hangman_9.png';
+  hangman.src = 'images/hangman_9.png';
 
   message4U.innerHTML = `man is hung... sorry....\nthe word was: ${selectedWord}`;
   openModal();
@@ -609,42 +609,42 @@ function manIsHung() {
 function hangmanImageChange(turn) {
   switch (turn) {
     case 0:
-      hangman.src = '/images/hangman_0.png';
+      hangman.src = 'images/hangman_0.png';
       break;
     case 1:
-      hangman.src = '/images/hangman_1.png';
+      hangman.src = 'images/hangman_1.png';
       break;
 
     case 2:
-      hangman.src = '/images/hangman_2.png';
+      hangman.src = 'images/hangman_2.png';
       break;
 
     case 3:
-      hangman.src = '/images/hangman_3.png';
+      hangman.src = 'images/hangman_3.png';
       break;
 
     case 4:
-      hangman.src = '/images/hangman_4.png';
+      hangman.src = 'images/hangman_4.png';
       break;
 
     case 5:
-      hangman.src = '/images/hangman_5.png';
+      hangman.src = 'images/hangman_5.png';
       break;
 
     case 6:
-      hangman.src = '/images/hangman_6.png';
+      hangman.src = 'images/hangman_6.png';
       break;
 
     case 7:
-      hangman.src = '/images/hangman_7.png';
+      hangman.src = 'images/hangman_7.png';
       break;
 
     case 8:
-      hangman.src = '/images/hangman_8.png';
+      hangman.src = 'images/hangman_8.png';
       break;
 
     case 9:
-      hangman.src = '/images/hangman_9.png';
+      hangman.src = 'images/hangman_9.png';
       break;
 
     default:
