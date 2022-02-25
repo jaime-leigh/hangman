@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <title>HANGMAN</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hangman</h1>
+      <h2>~ a game of life and death ~</h2>
+    </header>
+    <nav>
+      <ul class="nav-list">
+        <li><button class="newWord">New Word</button></li>
+
+        <li>
+          <button class="buttonAgain">Reset Tally</button>
+        </li>
+
+        <li>
+          <button class="hiddenButton">Message 4 u</button>
+        </li>
+      </ul>
+
+      <div class="messageBox hidden">
+        <button class="closeMessage">&times;</button>
+        <div class="message4U">
+          <h3>You're doing a great job!</h3>
+          <p>...</p>
+        </div>
+      </div>
+    </nav>
+    <div class="overlay hidden"></div>
+
+    <div class="flex-container">
+      <section class="hangman">
+        <img
+          src="/images/hangman_0.png"
+          class="hangman-image"
+          alt="hangman drawing"
+        />
+      </section>
+      <section class="alphabet">
+        <section class="flex-container">
+          <button class="a letter">a</button>
+          <button class="b letter">b</button>
+          <button class="c letter">c</button>
+          <button class="d letter">d</button>
+        </section>
+        <section class="flex-container">
+          <button class="e letter">e</button>
+          <button class="f letter">f</button>
+          <button class="g letter">g</button>
+          <button class="h letter">h</button>
+        </section>
+        <section class="flex-container">
+          <button class="i letter">i</button>
+          <button class="j letter">j</button>
+          <button class="k letter">k</button>
+          <button class="l letter">l</button>
+        </section>
+        <section class="flex-container">
+          <button class="m letter">m</button>
+          <button class="n letter">n</button>
+          <button class="o letter">o</button>
+          <button class="p letter">p</button>
+        </section>
+        <section class="flex-container">
+          <button class="q letter">q</button>
+          <button class="r letter">r</button>
+          <button class="s letter">s</button>
+          <button class="t letter">t</button>
+        </section>
+        <section class="flex-container">
+          <button class="u letter">u</button>
+          <button class="v letter">v</button>
+          <button class="w letter">w</button>
+          <button class="x letter">x</button>
+        </section>
+        <section class="flex-container">
+          <button class="y letter">y</button>
+          <button class="z letter">z</button>
+        </section>
+      </section>
+    </div>
+
+    <section class="word">
+      <div class="guessWord">
+        <p class="hiddenDash">...</p>
+      </div>
+      <div class="tally">
+        <h3>
+          People Saved:
+          <p class="saved">0</p>
+        </h3>
+        <h3>
+          People Killed:
+          <p class="killed">0</p>
+        </h3>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer-list">
+        <li>created by <a href="https://leighbasic.com/">Leigh Basic</a></li>
+        <li>email me at jamie@leighbasic.com</li>
+        <li>for more games...</li>
+        <li>github</li>
+      </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

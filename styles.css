@@ -1,0 +1,323 @@
+/* COLOURS
+#FFFFFF
+
+
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 80%;
+  color: #050505;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+body {
+  font-family: 'Shippori Antique B1', sans-serif;
+}
+
+h1 {
+  font-size: 12rem;
+  font-family: 'Shizuru', cursive;
+  text-transform: uppercase;
+  animation-name: animation1;
+  animation-duration: 2s;
+}
+
+h2 {
+  font-size: 4rem;
+  animation-name: animation2;
+  animation-duration: 3s;
+}
+
+button {
+  font-size: 2rem;
+  font-family: 'Shippori Antique B1', sans-serif;
+  text-transform: uppercase;
+  border: 5px solid #ffffff;
+}
+
+.buttonAgain {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 3000px) {
+  .buttonAgain::before {
+    content: '(Wash the blood from your hands)';
+    display: block;
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .buttonAgain,
+  .newWord {
+    font-size: 125%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .buttonAgain::before {
+    content: none;
+  }
+  .buttonAgain,
+  .newWord {
+    font-size: 130%;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 9rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}
+
+header {
+  line-height: 10rem;
+  background-color: blueviolet;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+nav {
+  background-color: #f15bb5;
+  padding: 0.5rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.nav-list li {
+  display: inline;
+  padding: 1rem;
+}
+
+.nav-list button {
+  background-color: #1b9aaa;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.hangman {
+  background-color: #ffffff;
+  text-align: center;
+  margin: auto 0;
+  width: 55%;
+}
+
+.hangman-image {
+  width: 30%;
+  animation: animation3;
+  animation-duration: 2.5s;
+  /* border: 0.5rem solid #1b9aaa; */
+}
+
+@media screen and (max-width: 900px) {
+  .hangman-image {
+    width: 40%;
+  }
+}
+
+/*hidden message*/
+
+.hiddenButton {
+  display: none;
+}
+
+.closeMessage {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.messageBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  font-size: 3rem;
+  background-color: #ffffff;
+  padding: 8rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 128.5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.alphabet {
+  color: #ffffff;
+
+  text-align: center;
+  width: 35%;
+
+  text-decoration: none;
+}
+
+.letter {
+  width: 100%;
+  font-size: 2.2rem;
+
+  background-color: #9b5de5;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hiddenDash {
+  letter-spacing: 0.9rem;
+  font-size: 200%;
+}
+
+.word {
+  background-color: #f15bb5;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 0rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.guessWord {
+  width: 60%;
+  text-align: center;
+}
+
+.tally {
+  width: 40%;
+}
+
+@media screen and (max-width: 900px) {
+  .tally,
+  h3,
+  .guessWord {
+    font-size: 67%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .tally,
+  h3,
+  .guessWord,
+  .word {
+    display: block;
+    width: 100%;
+    font-size: 115%;
+  }
+}
+
+.footer {
+  font-size: 1rem;
+  text-align: center;
+
+  bottom: 0;
+  width: 100%;
+  display: block;
+  background-color: #9b5de5;
+  padding: 1rem;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.noLineThrough {
+  text-decoration: none;
+}
+
+@keyframes animation1 {
+  0% {
+    transform: translate(0px, 1000px);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(0, 400px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0px, 400px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animation3 {
+  0% {
+    transform: translate(-1000px, 0px);
+  }
+
+  90% {
+    transform: translate(-1000px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
